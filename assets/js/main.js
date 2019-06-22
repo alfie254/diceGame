@@ -3,11 +3,11 @@
   * Company: @jackaltech (http://jackaltech.com)
 */
 
-var score, activePlayer, currentScore, isPlaying;
+var score, activePlayer, currentScore, finalScore, isPlaying;
 
 init();
 
-isPlaying = true;
+
 
 function init(){
   score = [0, 0];
@@ -22,6 +22,9 @@ function init(){
   document.querySelector('.player-1-panel').classList.remove('active');
   document.querySelector('.player-0-panel').classList.add('active');
   document.querySelector('.player-1-panel').classList.remove('active');
+  document.getElementById('player-0').textContent = 'Player-1';
+  document.getElementById('player-1').textContent = 'Player-2';
+  isPlaying = true;
   hideDice();
   
 }
@@ -67,9 +70,17 @@ document.querySelector('.btn-hold').addEventListener('click', function(){
   if(isPlaying){
     score[activePlayer] += currentScore;
     document.getElementById('score-' + activePlayer).innerText = score[activePlayer];
+
     //check if player has won
-    var winningScore = 20;
-    if(score[activePlayer] >= 20){
+    finalScore = document.getElementById('finalScore').value;
+    var winningScore;
+    if(finalScore){
+      winningScore = finalScore;
+    }
+    else{
+      winningScore = 20;
+    }
+    if(score[activePlayer] >= winningScore){
       document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
       document.querySelector('#player-' + activePlayer).textContent = 'Winner';
       hideDice();
