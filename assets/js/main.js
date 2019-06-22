@@ -1,6 +1,6 @@
 /*
   * Authour: Alfred Maina 
-  * Company: @jackaltech (http://jackatech.com)
+  * Company: @jackaltech (http://jackaltech.com)
 */
 
 var score, activePlayer, currentScore;
@@ -39,6 +39,11 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
   currentScore += dice1 + dice2;
   document.getElementById('current-' + activePlayer).textContent = currentScore;
   
+});
+
+document.querySelector('.btn-hold').addEventListener('click', function(){
+  score[activePlayer] += currentScore;
+  document.getElementById('score-' + activePlayer).innerText = score[activePlayer];
 });
 
 document.querySelector('.btn-new').addEventListener('click', function(){
