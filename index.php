@@ -32,6 +32,9 @@
           <div class="current" id="current-2">0</div>
         </div>
       </div>
+      
+        <img class="img-fluid dice" id="dice-1" src="assets/images/dice-5.png">
+        <img class="img-fluid dice" id="dice-2" src="assets/images/dice-3.png">
 
         <button class="btn btn-new">New Game</button>
         <button class="btn btn-roll">Roll</button>
