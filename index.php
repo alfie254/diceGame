@@ -29,9 +29,13 @@
         <div class="player-2-panel h-100">
           <div class="player-name" id="player-2">Player-2</div>
           <h2 class="score" id="score-0"> 49 </h2>
-          <div class="current" id="current-2">4</div>
+          <div class="current" id="current-2">0</div>
         </div>
       </div>
+
+        <button class="btn btn-new">New Game</button>
+        <button class="btn btn-roll">Roll</button>
+        <button class="btn btn-hold">Hold</button>
     </div>
   </div>
 
