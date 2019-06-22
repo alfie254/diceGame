@@ -7,8 +7,13 @@ var score, activePlayer, currentScore, finalScore, isPlaying;
 
 init();
 
+var player1 = prompt('Player One:');
+var player2 = prompt('Player Two:');
 
 
+  document.getElementById('player-0').textContent = player1;
+  document.getElementById('player-1').textContent = player2;
+  
 function init(){
   score = [0, 0];
   activePlayer = 0;
@@ -22,8 +27,8 @@ function init(){
   document.querySelector('.player-1-panel').classList.remove('active');
   document.querySelector('.player-0-panel').classList.add('active');
   document.querySelector('.player-1-panel').classList.remove('active');
-  document.getElementById('player-0').textContent = 'Player-1';
-  document.getElementById('player-1').textContent = 'Player-2';
+  document.getElementById('player-0').textContent = player1;
+  document.getElementById('player-1').textContent = player2;
   isPlaying = true;
   hideDice();
   
