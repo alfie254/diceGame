@@ -18,16 +18,16 @@
   <div class="container game-content">
     <div class="row text-center h-100">
       <div class="col-6">
-        <div class="player-1-panel h-100 active">
-          <div class="player-name" id="player-1">Player-1</div>
+        <div class="player-0-panel h-100 active">
+          <div class="player-name" id="player-0">Player-1</div>
           <h2 class="score" id="score-0"> 35 </h2>
           <div class="current" id="current-0">4</div>
         </div>
       </div>
       
       <div class="col-6">
-        <div class="player-2-panel h-100">
-          <div class="player-name" id="player-2">Player-2</div>
+        <div class="player-1-panel h-100">
+          <div class="player-name" id="player-1">Player-2</div>
           <h2 class="score" id="score-1"> 49 </h2>
           <div class="current" id="current-1">3</div>
         </div>
@@ -39,6 +39,7 @@
         <button class="btn btn-new">New Game</button>
         <button class="btn btn-roll">Roll</button>
         <button class="btn btn-hold">Hold</button>
+        <input type="text" Placeholder="Winning Score" id="finalScore">
     </div>
   </div>
 
