@@ -44,7 +44,14 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
 document.querySelector('.btn-hold').addEventListener('click', function(){
   score[activePlayer] += currentScore;
   document.getElementById('score-' + activePlayer).innerText = score[activePlayer];
+  nextPlayer();
 });
+
+function nextPlayer(){
+  activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
+  document.querySelector('.player-1-panel').classList.toggle('active');
+  document.querySelector('.player-2-panel').classList.toggle('active');
+}
 
 document.querySelector('.btn-new').addEventListener('click', function(){
   init();
