@@ -21,15 +21,15 @@
         <div class="player-1-panel h-100 active">
           <div class="player-name" id="player-1">Player-1</div>
           <h2 class="score" id="score-0"> 35 </h2>
-          <div class="current" id="current-1">4</div>
+          <div class="current" id="current-0">4</div>
         </div>
       </div>
       
       <div class="col-6">
         <div class="player-2-panel h-100">
           <div class="player-name" id="player-2">Player-2</div>
-          <h2 class="score" id="score-0"> 49 </h2>
-          <div class="current" id="current-2">0</div>
+          <h2 class="score" id="score-1"> 49 </h2>
+          <div class="current" id="current-1">3</div>
         </div>
       </div>
       

@@ -114,6 +114,7 @@ footer{
 .winner .player-name{
 	font-weight: 700;
 	color: #f34423;
+	border-bottom: 2px solid red;
 }
 .winner .current{
 	background: #ab1c01;
