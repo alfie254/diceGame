@@ -1,0 +1,47 @@
+body{
+	background: #4c3232;
+}
+.game-content{
+	height: calc(100vh - 60px);
+	background: #eaeaea;
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.1), 1px 1px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+footer{
+	background: #000;
+	height: 60px;	
+}
+.player-name{
+	margin-bottom: 20%;
+	font-size: 30px;
+	font-weight: 700;
+}
+.score{
+	margin-bottom: 30%;
+	font-weight: 700;
+	font-size: 50px;
+}
+.player-1-panel, .player-2-panel{
+	padding: 100px;
+}
+
+.current{
+	background: ;
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.1), 1px 1px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+	padding: 20px;
+	width: 150px;
+	margin: auto;
+	text-align: center;
+	font-size: 35px;
+}
+
+.active{
+	padding: 100px;
+	background-color: #fffcfc;
+	box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.1), 1px 1px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.active .score{
+	color: #00c100;
+}
+.active .current{
+	color: red;
+}
