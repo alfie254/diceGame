@@ -35,5 +35,12 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
   document.getElementById('dice-1').src = 'assets/images/dice-' + dice1 + '.png';  
   document.getElementById('dice-2').src = 'assets/images/dice-' + dice2 + '.png';
   showDice();
+
+  currentScore += dice1 + dice2;
+  document.getElementById('current-' + activePlayer).textContent = currentScore;
   
+});
+
+document.querySelector('.btn-new').addEventListener('click', function(){
+  init();
 });
