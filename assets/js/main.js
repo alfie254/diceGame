@@ -36,8 +36,20 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
   document.getElementById('dice-2').src = 'assets/images/dice-' + dice2 + '.png';
   showDice();
 
-  currentScore += dice1 + dice2;
-  document.getElementById('current-' + activePlayer).textContent = currentScore;
+  if(dice1 === 1 || dice2 === 1){
+      currentScore = 0;
+      nextPlayer();
+  }
+
+  else if(dice1 === 6 && dice2 === 6){
+    score[activePlayer] = 0;
+    document.getElementById('score-' + activePlayer).textContent = 0;
+    nextPlayer();
+  }
+  else {
+    currentScore += dice1 + dice2;
+    document.getElementById('current-' + activePlayer).textContent = currentScore;
+  }
   
 });
 
@@ -51,6 +63,11 @@ function nextPlayer(){
   activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
   document.querySelector('.player-1-panel').classList.toggle('active');
   document.querySelector('.player-2-panel').classList.toggle('active');
+  currentScore = 0;
+  document.getElementById('current-0').textContent = currentScore;
+  document.getElementById('current-1').textContent = currentScore;
+  hideDice();
+  
 }
 
 document.querySelector('.btn-new').addEventListener('click', function(){
