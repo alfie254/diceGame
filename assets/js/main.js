@@ -3,17 +3,13 @@
   * Company: @jackaltech (http://jackaltech.com)
 */
 
-var score, activePlayer, currentScore, finalScore, isPlaying;
+var score, activePlayer, currentScore, finalScore, isPlaying, player1, player2;
+
+player0 = prompt('Player One:');
+player1 = prompt('Player Two:');
 
 init();
 
-var player1 = prompt('Player One:');
-var player2 = prompt('Player Two:');
-
-
-  document.getElementById('player-0').textContent = player1;
-  document.getElementById('player-1').textContent = player2;
-  
 function init(){
   score = [0, 0];
   activePlayer = 0;
@@ -27,10 +23,24 @@ function init(){
   document.querySelector('.player-1-panel').classList.remove('active');
   document.querySelector('.player-0-panel').classList.add('active');
   document.querySelector('.player-1-panel').classList.remove('active');
-  document.getElementById('player-0').textContent = player1;
-  document.getElementById('player-1').textContent = player2;
+  document.getElementById('wins-0').textContent = '';
+  document.getElementById('wins-1').textContent = '';
   isPlaying = true;
   hideDice();
+
+  //Player's names
+  if(player1){
+    document.getElementById('player-0').textContent = player0;
+  }
+  else{
+    document.getElementById('player-0').textContent = 'player-1';
+  }
+  if(player1){
+    document.getElementById('player-1').textContent = player1;
+  }
+  else{
+    document.getElementById('player-1').textContent = 'player-2';
+  }
   
 }
 
@@ -87,7 +97,7 @@ document.querySelector('.btn-hold').addEventListener('click', function(){
     }
     if(score[activePlayer] >= winningScore){
       document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
-      document.querySelector('#player-' + activePlayer).textContent = 'Winner';
+      document.querySelector('#wins-' + activePlayer).innerHTML = ' wins!!';
       hideDice();
       document.querySelector('.player-0-panel').classList.remove('active');    
       document.querySelector('.player-1-panel').classList.remove('active');
