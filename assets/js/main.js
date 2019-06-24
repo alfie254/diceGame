@@ -72,6 +72,11 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
       document.getElementById('score-' + activePlayer).textContent = 0;
       nextPlayer();
     }
+    else if(dice1 === 4 && dice2 === 4){
+      score[activePlayer] = 0;
+      document.getElementById('score-' + activePlayer).textContent = 0;
+      nextPlayer();
+    }
     else {
       currentScore += dice1 + dice2;
       document.getElementById('current-' + activePlayer).textContent = currentScore;
@@ -117,7 +122,7 @@ function nextPlayer(){
   currentScore = 0;
   document.getElementById('current-0').textContent = 0;
   document.getElementById('current-1').textContent = 0;
-  hideDice();
+  // hideDice();
 }
 
 document.querySelector('.btn-new').addEventListener('click', function(){
