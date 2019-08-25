@@ -48,9 +48,7 @@
       <a href="https://github.com/alfie254" target="_blank">alfie</small>
   </footer>
 
-      <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
       <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="assets/vendor/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
       <script type="text/javascript" src="assets/js/main.js"></script>
 
 </body>

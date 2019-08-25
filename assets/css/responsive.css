@@ -7,16 +7,16 @@
 @media (max-width: 230px) {
 
 }
-@media (max-width: 500px) {
-	
-}
 @media (max-width: 767px) {
-	.current {
+  .current {
     padding: 10px;
     width: 80px;
     border-radius: 10px;
     font-size: 25px;
   }
+  .dice {
+    width: 80px;
+    }
   .player-name {
     font-size: 20px;
   }
@@ -29,6 +29,7 @@
     margin-bottom: 50%;
     font-size: 40px;
   }
+   
   .player-1-panel, .player-0-panel {
     padding: 50px;
     padding-top: 100px;
@@ -58,4 +59,41 @@
 /* Large Devices, .visible-lg-* */
 @media (min-width: 1200px) {
 
+}
+@media (max-width: 500px) {
+ .dice {
+     width: 50px;
+  }
+  .player-1-panel, .player-0-panel {
+        padding: 15px;
+        padding-top: 80px;
+    }
+    .btn {
+        width: 92px;
+        font-size: 10px;
+        left: 50%;
+    }
+    #finalScore {
+        width: 100px;
+        font-size: 12px;
+        left: 50%;
+    }
+    .current {
+        padding: 6px;
+        width: 70px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    #dice-1 {
+        top: 20%;
+    }
+    #dice-2 {
+        top: 40%;
+    }
+    .dice {
+        width: 80px;
+    }
+    .player-name {
+        font-size: 17px;
+    }
 }

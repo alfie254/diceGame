@@ -122,7 +122,7 @@ function nextPlayer(){
   currentScore = 0;
   document.getElementById('current-0').textContent = 0;
   document.getElementById('current-1').textContent = 0;
-  // hideDice();
+   hideDice();
 }
 
 document.querySelector('.btn-new').addEventListener('click', function(){
