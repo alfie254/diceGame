@@ -49,7 +49,7 @@
   </footer>
 
       <script type="text/javascript" src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="assets/js/main.js"></script>
+      <script type="text/javascript" src="assets/js/script.js"></script>
 
 </body>
 </html>
