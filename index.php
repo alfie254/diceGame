@@ -44,7 +44,7 @@
   </div>
 
   <footer class="text-white text-center pt-3">
-    <small>Copyright © Dice Game. All rights Reserved. Made by 
+    <small>Copyright © Dice Game. Made by 
       <a href="https://github.com/alfie254" target="_blank">alfie</small>
   </footer>
 

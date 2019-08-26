@@ -29,7 +29,7 @@ function init() {
   hideDice();
 
   //Player's names
-  if (player1) {
+  if (player0) {
     document.getElementById('player-0').textContent = player0;
   } else {
     document.getElementById('player-0').textContent = 'player-1';
