@@ -17,7 +17,7 @@ if (player0) {
 if (player1) {
     document.getElementById('player-1').innerHTML = player1;
 } else {
-    document.getElementById('player-0').innerText = "Player-2";
+    document.getElementById('player-1').innerText = "Player-2";
 }
 
 function init() {
@@ -99,11 +99,15 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
         } else {
             winningScore = 20;
         }
-        if (score[activePlayer] >= winningScore) {
+        if (score[activePlayer] == winningScore) {
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
             document.querySelector('#wins-' + activePlayer).innerHTML = ' wins!!';
             hideDice();
             isPlaying = false;
+        } else if (score[activePlayer] > winningScore) {
+            score[activePlayer] = winningScore - (score[activePlayer] - winningScore);
+            document.getElementById('score-' + activePlayer).textContent = score[activePlayer];
+            nextPlayer();
         } else {
             clearCurrent();
             nextPlayer();
